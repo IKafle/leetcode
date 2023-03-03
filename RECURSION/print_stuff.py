@@ -1,6 +1,3 @@
-
-
-
 def print_name_n_times(n):
     print("ishwor kafle")
 

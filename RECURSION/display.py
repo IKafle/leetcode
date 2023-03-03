@@ -1,8 +1,3 @@
-
-
-from audioop import reverse
-from unicodedata import name
-
 arr = [1,2,3,4,5,10,0]
 
 # Object references are passed by value.

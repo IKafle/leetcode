@@ -1,5 +1,3 @@
-
-
 def display_sum_n_natural_numbers(num):
 
     if (num == 0):
