@@ -9,5 +9,5 @@ This repository will includes my solutions to Leetcode algorithm questions. I wi
 
 | #    | Problem                                                                                                                                                         | Solution                                                                               |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Day 11    | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                                                               | [python3](https://github.com/cnkyrpsgl/leetcode/blob/master/solutions/1.py)            |
+| Day 01   | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                                                               | [python3](https://github.com/cnkyrpsgl/leetcode/blob/master/solutions/1.py)            |
 | 2    | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers)                                                    
