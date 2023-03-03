@@ -1,7 +1,3 @@
-
-from cgitb import reset
-
-
 def is_palindrome(i,length, array):
     
     if(array[i] != array[length-1-i]):
