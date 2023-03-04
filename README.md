@@ -11,4 +11,4 @@ This repository will include my solutions to Leetcode algorithm questions. I wil
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | Day 01   | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                                                               | [solution-01](https://github.com/echoIshwor/leetcode/blob/main/EASY/01.py)
 | Day 02    | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers)
-| [solution-02](https://github.com/echoIshwor/leetcode/blob/main/EASY/02.py)            |
+| [solution-02](https://github.com/echoIshwor/leetcode/blob/main/EASY/02.py)
