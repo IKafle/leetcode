@@ -25,6 +25,18 @@ Output: [0,1]
 from typing import List 
 class Solution:
 
+    
+    """
+    Time complexity: O(n^2)
+    - The outer loop runs n times,
+    - The inner loop runs (n-1) + (n-2) + ... + 1
+    - Complexity =  (n-1)n/2
+    - Hence, the overall complexity = O(n^2).
+
+    Space complexity : O(1)
+    -  It uses a constant amount of additional space to store the pointers and variables 
+       regardless of the input size.
+    """
     # Bruteforce solution
     def twoSumBruteforceSolution(self,nums: List[int], target: int) -> List[int]:
         length : int = len(nums)
@@ -44,6 +56,21 @@ class Solution:
 
             end = length - 1 # Reset the end pointer when the inner loop finishes.
 
+
+    
+    """
+    Time complexity: O(n)
+    - The algorithm iterates through the list once, performing constant time operations at each iteration.
+    - The constant time operations include dictionary lookups and updates, and simple arithmetic operations.
+    - Here, the number of iterations is directly proportional to the size of the input list, 
+      hence, the time complexity is O(n).
+
+    Space complexity : O(n)
+    - The algorithm uses a dictionary to store values, which can have up to n key-value pairs if all 
+      elements in nums are distinct.
+    - The space used by the dictionary grows linearly with the input size.
+      hence, the space complexity is O(n).
+    """
     # Optimized solution
     def twoSum(self, nums, target):
         item_index_map = {} # Initialize a dict
@@ -52,7 +79,6 @@ class Solution:
             if difference in item_index_map:   # Check if difference exists in the dict
                 return [item_index_map[difference],index]  # Return the two array indices.
             item_index_map[nums[index]] = index # Push current array item and its index to dict.
-       
 
 
 if __name__ == "__main__":
