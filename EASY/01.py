@@ -28,21 +28,21 @@ class Solution:
     # Bruteforce solution
     def twoSum(self,nums: List[int], target: int) -> List[int]:
         length : int = len(nums)
-        start : int = 0
-        end : int = length - 1
+        start : int = 0  # Set start pointer to first index of array
+        end : int = length - 1  # Set end pointer to last index of array
         
         for i in range(0,length,1):
-            start = i
-            while start < end:
+            start = i  # Move forward the start pointer by 1.
+            while start < end: # Terminate loop if the end pointer meets start pointer.
                 sum = nums[start] + nums[end]
 
                 if sum == target:
                     print(f"Target Found At Indices :  [{start}, {end}]")
                     return [start, end]
 
-                end = end -1
+                end = end -1  # Move backward the end pointer by 1.
 
-            end = length - 1
+            end = length - 1 # Reset the end pointer when the inner loop finishes.
 
 
 if __name__ == "__main__":
