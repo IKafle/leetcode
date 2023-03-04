@@ -26,7 +26,7 @@ from typing import List
 class Solution:
 
     # Bruteforce solution
-    def twoSum(self,nums: List[int], target: int) -> List[int]:
+    def twoSumBruteforceSolution(self,nums: List[int], target: int) -> List[int]:
         length : int = len(nums)
         start : int = 0  # Set start pointer to first index of array
         end : int = length - 1  # Set end pointer to last index of array
@@ -44,6 +44,17 @@ class Solution:
 
             end = length - 1 # Reset the end pointer when the inner loop finishes.
 
+    # Optimized solution
+    def twoSum(self, nums, target):
+        item_index_map = {} # Initialize a dict
+        for index in range(0,len(nums),1):
+            difference = target - nums[index]  # Check the difference between target and array item
+            if difference in item_index_map:   # Check if difference exists in the dict
+                return [item_index_map[difference],index]  # Return the two array indices.
+            item_index_map[nums[index]] = index # Push current array item and its index to dict.
+       
+
 
 if __name__ == "__main__":
-    Solution().twoSum([3,2,4], 6)
+
+    print(Solution().twoSumOptimize([2,3,4,7,1], 5))
