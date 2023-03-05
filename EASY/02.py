@@ -39,6 +39,8 @@ class Solution:
     """
     Time complexity: O(logn)
     - The number of iterations is equal to the number of digits in x
+    - How to calculate the number of digits in number x => math.ceil(math.log10(x))
+    - Here, log10 mean whole number, if the number system was binary, we would use log2(x)
 
     Space complexity : O(1)
     - It uses only a constant amount of extra space for storing the variables rev, 
