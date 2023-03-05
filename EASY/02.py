@@ -24,7 +24,7 @@ class Solution:
     Space complexity : O(log n)
     """
     #Bruteforce Solution
-    def isPalindrome(self, n: int) -> bool:
+    def isPalindromeBruteforceSolution(self, n: int) -> bool:
         reverse : int = 0
         num : int = n
         for _ in range(0, len(str(n)),1):
@@ -58,9 +58,9 @@ class Solution:
         return x == rev
 
 
-    # Pythonic way
-    def isPalindrome(self, n: int) -> bool:
-        return str(n) == str(n)[::-1]
+# Pythonic way
+def isPalindrome(n: int) -> bool:
+    return str(n) == str(n)[::-1]
 
 if __name__=="__main__":
     print(Solution().isPalindrome(313))
