@@ -71,7 +71,7 @@ class Solution:
     - The space used by the dictionary grows linearly with the input size.
       hence, the space complexity is O(n).
     """
-    # Optimized solution
+    # Optimal solution
     def twoSum(self, nums, target):
         item_index_map = {} # Initialize a dict
         for index in range(0,len(nums),1):
