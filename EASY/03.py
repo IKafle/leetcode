@@ -19,7 +19,70 @@ C can be placed before D (500) and M (1000) to make 400 and 900.
 Given a roman numeral, convert it to an integer.
 
 """
-
+from typing import Dict, Tuple
 class Solution:
+
+    """
+    Time complexity: O(n)
+    - The program loops through the string "s" one character at a time, 
+       and performs constant time operations (such as dictionary lookups 
+       and addition/subtraction operations) on each character.
+
+    Space complexity : O(1)
+    - It uses a constant amount of additional space to store the dictionary, 
+       rule list, accumulator, and loop index.
+    - The size of these data structures does not depend on the length of the input string.
+    """
     def romanToInt(self, s: str) -> int:
-        pass
+        roman_dict :Dict  = {
+            'I' : 1,
+            'V' : 5,
+            'X' : 10,
+            'L' : 50,
+            'C' : 100,
+            'D' : 500,
+            'M' : 1000,
+        }
+        
+        index : int = 0
+        rule : Tuple[str] = ('IV', 'IX', 'XL', 'XC', 'CD', 'CM',)
+        accumulator: int = 0
+        length : int = len(s)
+        # Run loop until the curent index equalize or exceeds the length of an string array. 
+        while index < length:
+            
+            # Calculate and return the accumulator if the index points to the last item of an string array.
+            # Special Case
+            if index + 1 >= length:
+                accumulator = accumulator + roman_dict[s[index]]
+                return accumulator
+
+            # Get the rule item based on the current and next index.
+            chars = ''.join([s[index],s[index + 1]])
+
+            # Check if current rule item is present in the rule List.
+            if chars in rule:
+                """
+                Rule for calculation
+                IV = V - I
+                IX = X - I
+                XL = L - x 
+                XC = C - X
+                CD = D - C
+                CM = M - C
+                """
+                accumulator = accumulator + (roman_dict[s[index + 1]] - roman_dict[s[index]])
+                # Apply the special rule performing the dictionary lookup and perform addition.
+                # Increment the index by 2
+                index = index + 2 
+            else :
+                 # Apply the simple addition peforming the dictionary lookup.
+                 # Increment the index by 1
+                accumulator = accumulator + roman_dict[s[index]]
+                index = index + 1
+
+        return accumulator
+
+
+if __name__ == '__main__':
+    print(Solution().romanToInt('MCMLXXXIX'))
