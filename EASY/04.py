@@ -18,9 +18,11 @@ Explanation: There is no common prefix among the input strings.
 Python Slicing example : https://railsware.com/blog/python-for-machine-learning-indexing-and-slicing-for-lists-tuples-strings-and-other-sequential-types/
 
 """
-from typing import List, Dict
+from typing import List
 class Solution:
     """
+    Technique Used : HORIZONLAL SCANNING
+    
     Time complexity: O(N*M) 
     - Here : N = number of items in the array
              M = length of the longest item (string) in the array.
