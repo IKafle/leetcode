@@ -22,7 +22,7 @@ from typing import List
 class Solution:
     """
     Technique Used : HORIZONLAL SCANNING
-    
+
     Time complexity: O(N*M) 
     - Here : N = number of items in the array
              M = length of the longest item (string) in the array.
@@ -40,7 +40,7 @@ class Solution:
         prefix = strs[0]
         for index in range(1, len(strs) , 1):
             while strs[index].find(prefix) !=0:
-                prefix = prefix[0:len(prefix)-1]
+                prefix = prefix[0:len(prefix)-1] #Remove a character on each iteration until we have common character/s on both the strings
 
                 if not prefix:
                     return prefix
