@@ -32,6 +32,15 @@ class ListNode:
 
 
 class Solution:
+
+    """
+    Time complexity: O(m + n) 
+    -  The code traverses both input lists once and adds the nodes to the merged list in sorted order.
+
+    Space complexity : O(1)
+    - The code only creates a constant number of new variables regardless of the size of the input linked lists.
+    - The code does not create any new linked list nodes or arrays to store the merged list 
+    """
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
      
         # Initialize two pointers to the heads of both the lists.
