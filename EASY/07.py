@@ -30,5 +30,24 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 from typing import List
 class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
-        pass
+    def removeDuplicates(self, nums: List[int]) -> List[int]:
+
+        if len(nums) == 1:
+            return 1
+        
+        p : int = 0 
+        q : int = 0
+        for i in range(0, len(nums), 1):
+            
+            if nums[p] != nums[q]:
+                p += 1
+                nums[p] = nums[q]
+
+            q  += 1
+
+        return (p + 1)
+
+
+if __name__ == '__main__':
+    print(Solution().removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
+
