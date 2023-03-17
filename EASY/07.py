@@ -38,7 +38,7 @@ class Solution:
 
     Space complexity : O(1)
     """
-    def removeDuplicates(self, nums: List[int]) -> List[int]:
+    def removeDuplicates(self, nums: List[int]) -> int:
 
         if len(nums) == 1:
             return 1
