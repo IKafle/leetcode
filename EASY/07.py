@@ -30,14 +30,23 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 from typing import List
 class Solution:
+    
+    """
+    Time complexity: O(n) 
+    -  the loop iterates over the list once, performing constant-time operations 
+        (i.e.,swapping an array element) at each array item
+
+    Space complexity : O(1)
+    """
     def removeDuplicates(self, nums: List[int]) -> List[int]:
 
         if len(nums) == 1:
             return 1
-        
+
+        # Initialize two pointers
         p : int = 0 
         q : int = 0
-        for i in range(0, len(nums), 1):
+        for _ in range(0, len(nums), 1):
             
             if nums[p] != nums[q]:
                 p += 1
