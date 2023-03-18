@@ -33,5 +33,37 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 from typing import List
 class Solution:
+    """
+    Time complexity: O(n) 
+    Space complexity : O(1)
+    """
     def removeElement(self, nums: List[int], val: int) -> int:
-        pass
+
+        # Initialize two pointers
+        p: int = 0
+        q: int = len(nums) - 1
+
+        # Iterate until two pointers meet
+        while p <= q :
+
+            if nums[p] == val :
+
+                if nums[q] == val:
+                    q -= 1
+                    continue
+
+                nums[p] , nums[q]  = nums[q] , nums[p]
+                p += 1
+                q -= 1
+                continue
+
+            p += 1
+
+        # Special case : when all the elements in the list are same.
+        # We only move the right pointers by 1 towards left. The left pointer is not moved.
+        if p == 0 : return 0
+        return p
+
+
+if __name__ == "__main__":
+    Solution().removeElement([3,2,2,3], 3)
