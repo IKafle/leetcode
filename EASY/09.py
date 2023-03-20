@@ -17,5 +17,21 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 """
 
 class Solution:
+    """
+    Time complexity: O(m * n): 
+       if m is the length of needle and n is the length of haystack.
+       The python function find() uses the boyer-moore-horspool Algorithm which finds all
+       the occurences of a substring in a string. 
+    Space complexity : O(1)
+    """
     def strStr(self, haystack: str, needle: str) -> int:
-        pass
+
+        if not needle:
+            return -1
+
+        return haystack.find(needle)
+    
+if __name__ == "__main__":
+    haystack : str = 'leetcode'
+    needle : str  = 'leeto'
+    print(Solution().strStr(haystack, needle))
