@@ -20,3 +20,7 @@ Example 3:
 Input: nums = [1,3,5,6], target = 7
 Output: 4
 """
+from typing import List
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        pass
