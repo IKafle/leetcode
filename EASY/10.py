@@ -22,5 +22,41 @@ Output: 4
 """
 from typing import List
 class Solution:
+    """
+    Time complexity: O(log n) 
+    - The program implements the binary search algorithm to search for a target
+    element in a sorted list of integers
+
+    Space complexity : O(1)
+    - The program only uses a constant amount of extra space for storing the left, 
+    right, and middle indices
+    """
     def searchInsert(self, nums: List[int], target: int) -> int:
-        pass
+        left:int = 0
+        right:int = len(nums)
+        return self.binarySearch(left , right-1, nums, target)
+
+    def binarySearch(self, left:int, right:int, nums:List[int] , target:int) ->int:
+
+        middle : int = (left + right)//2
+
+        # Base Case
+        if left == right:
+            
+            if target > nums[middle]:
+                return middle + 1
+            
+            return middle
+
+        if (target > nums[middle]):
+            left = middle + 1
+        else:
+            right = middle
+
+        return self.binarySearch(left, right, nums , target)
+
+
+if __name__ == "__main__":
+    nums: List[int] = [1,3,5,6]
+    target: int = 5
+    print(Solution().searchInsert(nums, target))
