@@ -19,4 +19,4 @@ This repository will include my solutions to Leetcode algorithm questions. I wil
 | Day 08   | [Remove Element](https://leetcode.com/problems/remove-element/)                                                                                                   | [solution #27](https://github.com/echoIshwor/leetcode/blob/main/EASY/08.py)
 | Day 09   | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)                                                 | [solution #28](https://github.com/echoIshwor/leetcode/blob/main/EASY/09.py)
 | Day 10   | [Search Insert Position](https://leetcode.com/problems/search-insert-position/)| [solution #35](https://github.com/echoIshwor/leetcode/blob/main/EASY/10.py)
-| Day 11   | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/)| [solution #58](https://github.com/echoIshwor/leetcode/blob/main/EASY/101.py)
+| Day 11   | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/)| [solution #58](https://github.com/echoIshwor/leetcode/blob/main/EASY/11.py)
