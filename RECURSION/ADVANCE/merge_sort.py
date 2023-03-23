@@ -1,7 +1,9 @@
 from typing import List
 class Solution:
     """
-    Time complexity: O(nlogn) 
+    Time complexity: O(nlogn)
+    log n = dividing an array (binary search)
+    n = merging an array back (using two pointers) 
     
     Space complexity : O(n)
     """
