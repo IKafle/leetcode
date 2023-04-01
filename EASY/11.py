@@ -22,5 +22,17 @@ Explanation: The last word is "joyboy" with length 6.
 """
 
 class Solution:
+    """
+    TC : split() method splits the string s into a list of substrings based on whitespace characters.
+    This operation takes O(n) time.
+    SC : O(1)
+    """
     def lengthOfLastWord(self, s: str) -> int:
-        pass
+        return len(s.split()[-1])
+
+
+
+if __name__=="__main__":
+    string : str ="   fly me   to   the moon  "
+    length: int = Solution().lengthOfLastWord(string)
+    print(length)
