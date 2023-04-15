@@ -34,7 +34,8 @@ class Solution:
             # 'Take' option : Perform the recursion
             # the item is removed from the ds once the recursion gets completed. 
             ds.append(arr[i])
-            # On the recursion tree, the for loop iterates in branches from left to right.
+            # On the recursion tree, the for loop iterates in branches from left to right. (Horizontally)
+            # The recursive call causes the recursion tree grow from top to bottom. (Vertically) 
             self.combinationSum(i+1, target-arr[i], arr,container, ds)
             ds.pop()
             
