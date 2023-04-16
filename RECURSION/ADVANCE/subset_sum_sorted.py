@@ -26,8 +26,8 @@ class Solution:
         
         #Base case
         if index == len(arr):
-            # Add the sum to list when the current index > size of list.
-            # Leaf of the recursion tree. (Analogy)
+            # Add the sum to list : the moment when current index exceeds size of the list.
+            # When the control reaches leaf of the recursion tree. (Analogy)
             ds.append(sum)
             return
         
