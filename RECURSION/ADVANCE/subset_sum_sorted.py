@@ -6,6 +6,9 @@ if array = [2,1,3]
 
 then , sum = [0,1,2,3,3,4,5,6]
 
+TC : 2^n + 2^nlog(2^n)  [recursive solution + sorting (resulted sorted list = 2^n)]
+SC : 2^n (ds contains the sum where number of elements = 2^n)
+Note : there are 'N' indices and for each indices there are two choices : pick and not-pick
 """
 
 from typing import List
