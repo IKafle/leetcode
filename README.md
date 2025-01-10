@@ -2,7 +2,7 @@
 
 ## About
 
-This repository will include my solutions to Leetcode algorithm questions. I will make my way through easy problem set first and then gradually move to medium and finally to hard on [LeetCode.](https://leetcode.com/). It would be my attempt to solve atleast one question each day.
+This repository will include my solutions to Leetcode algorithm questions. I will make my way through easy problem set first and then gradually move to medium and finally to hard on [LeetCode.](https://leetcode.com/).
 
 
 ## List of Problems
